@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `promart_db`.`clients` (
+  `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(30) NOT NULL,
+  `surname` VARCHAR(30) NOT NULL,
+  `mothers_surname` VARCHAR(30) NULL,
+  `email` VARCHAR(50) NOT NULL UNIQUE,
+  `birthdate` VARCHAR(10) NOT NULL,
+  `age` VARCHAR(3) NOT NULL,
+  `active` BOOLEAN NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
